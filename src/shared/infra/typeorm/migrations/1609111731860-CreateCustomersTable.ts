@@ -38,6 +38,6 @@ export default class CreateCustomersTable1609111731860
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    queryRunner.dropTable('customers');
+    await queryRunner.dropTable('customers');
   }
 }
